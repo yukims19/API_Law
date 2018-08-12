@@ -386,6 +386,42 @@ footer {
   color: #bfa16a;
 }
 
+.services-bg-grid {
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+
+.services-bg-grid__item {
+  padding: 5px;
+}
+.services-bg-grid__item i {
+  color: #ffffff;
+  top: -20px;
+  position: relative;
+  background: #bfa16a;
+  padding: 5px;
+  border: 3px solid #ffffff;
+  border-radius: 2px;
+}
+.services-bg-grid__item .service-card-img {
+  height: 200px;
+  background-color: gray;
+}
+.services-bg-grid__item .btn {
+  background-color: #bfa16a;
+  color: #ffffff;
+  font-weight: 600;
+  margin: 20px;
+}
+.services-bg-grid__item .btn:hover {
+  background-color: #ab8d58;
+}
+.services-bg-grid__item h4 {
+  margin-bottom: 20px;
+}
+.services-bg-grid__item p {
+  color: #7f7f7f;
+}
+
 .section-title {
   width: max-content;
   margin: auto;

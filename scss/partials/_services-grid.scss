@@ -18,3 +18,43 @@
     color: $gold;
   }
 }
+
+.services-bg-grid {
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+.services-bg-grid__item {
+  padding: 5px;
+
+  i {
+    color: $white;
+    top: -20px;
+    position: relative;
+    background: $gold;
+    padding: 5px;
+    border: 3px solid $white;
+    border-radius: 2px;
+  }
+
+  .service-card-img {
+    height: 200px;
+    background-color: gray;
+  }
+
+  .btn {
+    background-color: $gold;
+    color: $white;
+    font-weight: 600;
+    margin: 20px;
+  }
+  .btn:hover {
+    background-color: #ab8d58;
+  }
+
+  h4 {
+    margin-bottom: 20px;
+  }
+
+  p {
+    color: #7f7f7f;
+  }
+}
