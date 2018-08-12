@@ -47,6 +47,10 @@
   align-content: center;
   justify-content: center;
 }
+
+.card-container__item .contact-cards p {
+  align-self: center;
+}
 .card-container--no-bg {
   background-image: none;
   background-color: $white;

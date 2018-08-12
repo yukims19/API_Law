@@ -1,5 +1,5 @@
 .contact-form {
-  background-color: $dark-blue;
+  background-color: #703030;
   padding: 100px 15px;
 }
 .contact-form__wrapper {
@@ -28,7 +28,7 @@
   height: 300px;
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   .contact-form__wrapper {
     width: 90%;
   }
