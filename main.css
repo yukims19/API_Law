@@ -233,6 +233,12 @@ footer {
   color: inherit;
 }
 
+.card-container__item .contact-cards {
+  height: 80px;
+  display: flex;
+  align-content: center;
+}
+
 .card-container--no-bg {
   background-image: none;
   background-color: #ffffff;

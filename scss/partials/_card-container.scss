@@ -18,29 +18,34 @@
 }
 
 .card-container__item {
-    color: $gold;
-    text-align: center;
-    border: 1px solid $gold;
-    padding: 25px;
-    flex-grow: 1;
-    border-radius: 5px;
+  color: $gold;
+  text-align: center;
+  border: 1px solid $gold;
+  padding: 25px;
+  flex-grow: 1;
+  border-radius: 5px;
 
-    &:not(:last-child):not(:first-child) {
+  &:not(:last-child):not(:first-child) {
     margin: 0px 30px;
-    }
+  }
 
-    hr {
-      margin: 15px auto;
-      width: 30%;
-    }
-    h4 {
-      margin: 0;
-    }
-    a {
-      color: inherit;
-    }
+  hr {
+    margin: 15px auto;
+    width: 30%;
+  }
+  h4 {
+    margin: 0;
+  }
+  a {
+    color: inherit;
+  }
 }
 
+.card-container__item .contact-cards {
+  height: 80px;
+  display: flex;
+  align-content: center;
+}
 .card-container--no-bg {
   background-image: none;
   background-color: $white;
@@ -55,18 +60,18 @@
   }
 }
 
-@media(min-width: 768px) and (max-width: 1200px) {
-    .card-container__item {
-      &:first-child {
-        margin-left: 4%;
-      }
-      &:last-child {
-        margin-right: 4%;
-      }
+@media (min-width: 768px) and (max-width: 1200px) {
+  .card-container__item {
+    &:first-child {
+      margin-left: 4%;
     }
+    &:last-child {
+      margin-right: 4%;
+    }
+  }
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   .card-container__item {
     width: 50%;
     margin: 2% 25% 2% 25%;
