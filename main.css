@@ -123,7 +123,7 @@ footer {
 }
 
 .footer__copyright {
-  width: 50%;
+  width: 100%;
   text-align: center;
 }
 .footer__copyright p {
@@ -132,7 +132,7 @@ footer {
 
 @media (max-width: 768px) {
   .footer__info div {
-    width: 100%;
+    width: 50%;
     padding: 15px;
   }
 }
