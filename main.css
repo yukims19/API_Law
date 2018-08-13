@@ -117,12 +117,13 @@ footer {
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-.footer__info h5, .footer__info h3 {
+.footer__info h5,
+.footer__info h3 {
   margin: 0;
 }
 
 .footer__copyright {
-  width: 100%;
+  width: 50%;
   text-align: center;
 }
 .footer__copyright p {

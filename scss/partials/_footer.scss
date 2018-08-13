@@ -15,21 +15,22 @@ footer {
   justify-content: space-evenly;
   flex-wrap: wrap;
 
-  h5,h3 {
+  h5,
+  h3 {
     margin: 0;
   }
 }
 
 .footer__copyright {
-  width: 100%;
+  width: 50%;
   text-align: center;
   p {
     margin-bottom: 0px;
   }
 }
 
-@media (max-width:768px) {
-  .footer__info div{
+@media (max-width: 768px) {
+  .footer__info div {
     width: 100%;
     padding: 15px;
   }
