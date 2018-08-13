@@ -121,6 +121,10 @@ footer {
 .footer__info h3 {
   margin: 0;
 }
+.footer__info a[href^=tel] {
+  text-decoration: inherit;
+  color: inherit;
+}
 
 .footer__copyright {
   width: 100%;
