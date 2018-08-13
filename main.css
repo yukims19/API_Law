@@ -122,8 +122,8 @@ footer {
   margin: 0;
 }
 .footer__info a[href^=tel] {
-  text-decoration: inherit;
-  color: inherit;
+  text-decoration: none;
+  color: gray;
 }
 
 .footer__copyright {
@@ -403,9 +403,14 @@ footer {
 }
 
 .services-bg-grid {
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(49%, 1fr));
 }
 
+@media (max-width: 768px) {
+  .services-bg-grid {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  }
+}
 .services-bg-grid__item {
   padding: 5px;
 }
