@@ -1,5 +1,4 @@
-body,
-html {
+body, html {
   width: 100%;
   height: 100%;
 }
@@ -17,7 +16,7 @@ ul,
 p,
 a,
 form {
-  font-family: sans-serif;
+  font-family: "Raleway", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
 }
@@ -63,7 +62,7 @@ h4.h4--uppercase {
 
 h5 {
   display: inline-block;
-  font-family: sans-serif;
+  font-family: "Raleway", Arial, sans-serif;
   letter-spacing: 2px;
   line-height: 16px;
   font-size: 16px;
@@ -85,7 +84,7 @@ img {
 .container {
   padding-left: 15px;
   padding-right: 15px;
-  margin: 100px auto;
+  margin: 100px 0px;
 }
 
 .white {
@@ -117,13 +116,8 @@ footer {
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-.footer__info h5,
-.footer__info h3 {
+.footer__info h5, .footer__info h3 {
   margin: 0;
-}
-.footer__info a[href^=tel] {
-  text-decoration: none;
-  color: gray;
 }
 
 .footer__copyright {
@@ -136,54 +130,77 @@ footer {
 
 @media (max-width: 768px) {
   .footer__info div {
-    width: 50%;
+    width: 100%;
     padding: 15px;
   }
 }
-.navbar-expand-lg {
+.primary-nav {
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.14);
+  background-color: #fff;
   position: fixed;
-  background: white;
   width: 100%;
-  z-index: 3;
+  height: 84px;
+  z-index: 10;
 }
 
-.navbar-expand-lg .navbar-collapse {
-  justify-content: flex-end;
+.primary-nav__container {
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
 }
 
-.navbar-expand-lg .navbar-nav .nav-item {
-  margin: 0px 20px 0px 20px;
+.primary-nav__items--right {
+  display: flex;
+  min-width: 40%;
+  justify-content: space-between;
+}
+
+.primary-nav__item {
   font-weight: 600;
 }
 
-.navbar-brand {
-  margin-left: 20px;
+.primary-nav__menu-icon {
+  display: none;
+}
+.primary-nav__menu-icon i {
+  font-size: 1.5em;
 }
 
-.navbar-brand a:hover {
-  color: black;
-  text-decoration: none;
+.primary-nav__item:not(:last-child) {
+  margin-right: 10%;
 }
 
-.navbar-expand-lg .navbar-nav .nav-item.active .nav-link {
-  color: #bfa16a;
+.primary-nav__item--logo {
+  margin-right: auto;
+}
+.primary-nav__item--logo h3 {
+  display: inline-block;
+  font-weight: 400;
 }
 
-.navbar-expand-lg .navbar-nav .nav-item .nav-link:hover {
-  color: #bfa16a;
-  text-decoration: underline;
-}
+@media (max-width: 768px) {
+  .primary-nav__menu-icon {
+    display: block;
+  }
 
-.navbar-nav li img {
-  width: auto;
-  height: 16px;
+  .primary-nav__items--right {
+    display: none;
+    min-width: 40%;
+    justify-content: space-between;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    background-color: #fff;
+    width: 100%;
+    padding: 15px;
+    line-height: 29px;
+  }
 }
-
-.navbar-nav li .dropdown-menu {
-  min-width: 0px;
-}
-
 .hero-banner {
   padding-top: 84px;
   display: flex;
@@ -251,17 +268,6 @@ footer {
 }
 .card-container__item a {
   color: inherit;
-}
-
-.card-container__item .contact-cards {
-  height: 80px;
-  display: flex;
-  align-content: center;
-  justify-content: center;
-}
-
-.card-container__item .contact-cards p {
-  align-self: center;
 }
 
 .card-container--no-bg {
@@ -411,47 +417,6 @@ footer {
   color: #bfa16a;
 }
 
-.services-bg-grid {
-  grid-template-columns: repeat(auto-fill, minmax(49%, 1fr));
-}
-
-@media (max-width: 768px) {
-  .services-bg-grid {
-    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
-  }
-}
-.services-bg-grid__item {
-  padding: 5px;
-}
-.services-bg-grid__item i {
-  color: #ffffff;
-  top: -20px;
-  position: relative;
-  background: #bfa16a;
-  padding: 5px;
-  border: 3px solid #ffffff;
-  border-radius: 2px;
-}
-.services-bg-grid__item .service-card-img {
-  height: 200px;
-  background-color: #703030;
-}
-.services-bg-grid__item .btn {
-  background-color: #bfa16a;
-  color: #ffffff;
-  font-weight: 600;
-  margin: 20px;
-}
-.services-bg-grid__item .btn:hover {
-  background-color: #ab8d58;
-}
-.services-bg-grid__item h4 {
-  margin-bottom: 20px;
-}
-.services-bg-grid__item p {
-  color: #7f7f7f;
-}
-
 .section-title {
   width: max-content;
   margin: auto;
@@ -493,12 +458,12 @@ footer {
   justify-content: center;
   color: #ffffff;
   background-color: #000000;
-  background: url("img/hero-bg-overlay.jpg") center left;
+  background: url("img/hero-bg-overlay.png") center left;
   background-size: cover;
 }
 
 .contact-form {
-  background-color: #703030;
+  background-color: #272b32;
   padding: 100px 15px;
 }
 
@@ -534,4 +499,4 @@ footer {
   }
 }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=index.css.map */

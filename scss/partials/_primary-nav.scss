@@ -26,3 +26,10 @@
   color: #bfa16a;
   text-decoration: underline;
 }
+.navbar-nav li img {
+  width: auto;
+  height: 16px;
+}
+.navbar-nav li .dropdown-menu {
+  min-width: 0px;
+}

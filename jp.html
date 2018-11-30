@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>API 法律事務所</title>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="scss/vendor/normalize.css">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg">
+            <div class="navbar-brand">
+                <a href="/jp">
+                    <!-- img src="./img/logo.png" alt="API Law Office" style="height: 70px; width: aut"/-->
+                    <h3>API</h3>
+                    <h5>法律事務所</h5>
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/jp">ホーム</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about-jp">事務所概要</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/services-jp">サービス</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact-jp">お問合わせ</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="./img/japan.svg"/>　日本語
+                        </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/" lang="ja">
+                        <img src="./img/united-states.svg"/> ENG
+                    </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <header class="hero-banner">
+            <div class="hero-banner__wrapper">
+                <img class="hero-banner__icon" src="img/scale-icon.svg" alt="decoration-image">
+                <h5>移民法サービス</h5>
+                <h1>API 法律事務所</h1>
+                <hr/>
+                <h4 class="h4--italics">ビジネスと家族移民</h4>
+            </div>
+        </header>
+        <section class="card-container">
+            <ul class="card-container__wrapper">
+                <li class="card-container__item">
+                    <h4>就労ビザ</h4>
+                    <hr>
+                    <a href="/services">もっと詳しく >></a>
+                </li>
+                <li class="card-container__item">
+                    <h4>グリーンカード
+                    </h4>
+                    <hr>
+                    <a href="/services">もっと詳しく >></a>
+                </li>
+                <li class="card-container__item">
+                    <h4>市民権
+                    </h4>
+                    <hr>
+                    <a href="/services">もっと詳しく >></a>
+                </li>
+            </ul>
+        </section>
+        <section id="about" class="container">
+            <div class="title-wrapper">
+                <div class="section-title">
+                    <h1 class="section-title__back-text">About Us</h1>
+                    <h2 class="section-title__front-text">- Who we are -</h2>
+                </div>
+            </div>
+            <div class="split-content">
+                <div class="content-block__wrapper">
+                    <h3 class="content-block__title">
+                        API法律事務所
+                    </h3>
+                    <hr class="content-block__hr"/>
+                    <p class="content-block__text">
+                        カリフォルニア州のサンフランシスコに設立されたAPI法律事務所は米国移民法を専門とし、企業や起業家が米国内でビジネスを確立するために適切なビザやグリーンカードを取得するサポートを提供しています。また、API法律事務所は個人にもグリンカードや米国市民権などがあります。
+
+                    </p>
+                    <a href="/about">もっと詳しく知る</a>
+                </div>
+                <div>
+                    <!-- <img src="img/bridge.jpg" alt=""> -->
+                </div>
+            </div>
+        </section>
+        <section id="services" class="container">
+            <div class="title-wrapper">
+                <div class="section-title">
+                    <h1 class="section-title__back-text">Services</h1>
+                    <h2 class="section-title__front-text">- What we do -</h2>
+                </div>
+            </div>
+            <div class="services-grid">
+                <div class="services-grid__item">
+                    <i class="far fa-money-bill-alt fa-2x"></i>
+                    <h4 class="h4--uppercase">E1/E2 ビザ</h4>
+                    <p>国際貿易業務や米国への投資を行う企業
+                    </p>
+                </div>
+                <div class="services-grid__item">
+                    <i class="fa fa-graduation-cap fa-2x"></i>
+                    <h4 class="h4--uppercase">H1B ビザ</h4>
+                    <p>学士以上の資格、または同等の職務経験</p>
+                </div>
+                <div class="services-grid__item">
+                    <i class="fas fa-chart-line fa-2x"></i>
+                    <h4 class="h4--uppercase">J1 ビザ</h4>
+                    <p>短期間のインターンシップまたは外国の学位または職務経験のある者のためのトレーニング</p>
+                </div>
+                <div class="services-grid__item">
+                    <i class="fa fa-building fa-2x"></i>
+                    <h4 class="h4--uppercase">L1 ビザ</h4>
+                    <p>外国のグループ会社で少なくとも1年間勤務した従業員の譲渡</p>
+                </div>
+                <div class="services-grid__item">
+                    <i class="fa fa-trophy fa-2x"></i>
+                    <h4 class="h4--uppercase">O1 ビザ</h4>
+                    <p>科学、芸術、教育、ビジネス、またはスポーツ競技における異常な能力の所有</p>
+                </div>
+                <div class="services-grid__item">
+                    <i class="far fa-handshake fa-2x"></i>
+                    <h4 class="h4--uppercase">EMPLOYMENT-BASED GREEN CARD</h4>
+                    <p>企業のスポンサーシップや自己協賛による申請</p>
+                </div>
+                <div class="services-grid__item">
+                    <i class="fa fa-users fa-2x"></i>
+                    <h4 class="h4--uppercase">FAMILY-BASED GREEN CARD</h4>
+                    <p>米国市民またはグリーンカード保有者の配偶者、親、児童、または兄弟を持つ</p>
+                </div>
+                <div class="services-grid__item">
+                    <i class="fa fa-globe fa-2x"></i>
+                    <h4 class="h4--uppercase">市民権
+                    </h4>
+                    <p>移民旅の最後の停留所</p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer__wrapper">
+                <div class="footer__info">
+                    <div>
+                        <a href="/" class="gold">
+                            <h3>API</h3>
+                            <h5>法律事務所</h5>
+                        </a>
+                    </div>
+                    <div>
+                        <h5 class="gold">
+                            Eメール
+                        </h5>
+                        <p class="gray">
+                            info@apilaw.com
+                        </p>
+                    </div>
+                    <div>
+                        <h5 class="gold">
+                            電話
+                        </h5>
+                        <p class="gray">
+                            415-855-3055
+                        </p>
+                    </div>
+                    <div>
+                        <h5 class="gold">
+                            住所
+                        </h5>
+                        <p class="gray">
+                            388 Market Street, Suite 1300 <br>
+                            San Francisco, CA, 94111
+                        </p>
+                    </div>
+                </div>
+                <div class="footer__copyright">
+                    <p class="gold">
+                        ​2018 API Law Office All Rights Reserved
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body>
+</html>
